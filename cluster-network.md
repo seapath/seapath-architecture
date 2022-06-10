@@ -19,5 +19,6 @@ We propose a layer 2 networking solution (using OpenVSwitch since it's included 
 
 
 This will create an extended L2 network accross the 3 nodes, each node having a L3 ip address for all the mentionned communications, however this will create an obvious loop. L2 loops needs to be dealt with using some form of spanning tree protocol. We propose to use RSTP.
+In this example we set a smaller rstp priority on the host1, which will make rstp cut the loop between the other 2 nodes by setting one port to "discarding" mode.
 
 <img src="cluster_network3.svg" width="800" />
