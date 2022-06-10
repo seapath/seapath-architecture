@@ -7,7 +7,7 @@ Deploying a seapath cluster will be done in several steps:
 	- for Yocto, follow the directions of the [yocto-bsp](https://github.com/seapath/yocto-bsp) repo
 	- for Debian, follow the directions of the [build_debian_iso](https://github.com/seapath/build_debian_iso) repo
 - use the choosen seapath  host installation medium on 3 machines
-- create a [cluster network](https://github.com/seapath/seapath-architecture/blob/main/cluster-network.md) (to properly interconnect the 3 nodes)
+- create a [cluster network](cluster-network.md) (to properly interconnect the 3 nodes)
 - configure the cluster using the [ansible](https://github.com/seapath/ansible) repo
 	- for Yocto installs, use the main branch
 	- for Debian installs, use the debian-main branch
