@@ -20,3 +20,4 @@ We propose a layer 2 networking solution (using OpenVSwitch since it's included 
 
 This will create an extended L2 network accross the 3 nodes, each node having a L3 ip address for all the mentionned communications, however this will create an obvious loop. L2 loops needs to be dealt with using some form of spanning tree protocol. We propose to use RSTP.
 
+![cluster_network3.svg](cluster_network3.svg)
