@@ -22,3 +22,17 @@ This will create an extended L2 network accross the 3 nodes, each node having a 
 In this example we set a smaller rstp priority on the host1, which will make rstp cut the loop between the other 2 nodes by setting one port to "discarding" mode.
 
 <img src="cluster_network3.svg" width="800" />
+
+
+## Cabling
+
+To simplify the cabling engineering, we recommend:
+- thinking of the 3 hosts à "1, 2, 3", following each other in the loop "1 --> 2 --> 3 --> 1" 
+  - if N=1 then N+1=2
+  - if N=2 then N+1=3
+  - if N=3 then N+1=1
+- calling the 2 team0 bridge physical interfaces "team0_0" and "team0_1"
+- on host N, team0_0 should be connected to team0_1 of host N+1
+- consequently on host N, team0_1 is connected to team0_0 of host N-1
+
+<img src="cluster_network4.svg" width="800" />
