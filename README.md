@@ -1,6 +1,8 @@
 # Welcome to Seapath!
 
 Seapath is a code base that will help create and manage a cluster of machines (hosts) able to run guest operating systems (virtual machines).
+Note that the nodes must support UEFI (Legacy BIOS is not supported).
+
 Deploying a seapath cluster will be done in several steps:
 - choose whether you want to use a Yocto custom image or a standard debian OS
 - create the seapath host installation medium
